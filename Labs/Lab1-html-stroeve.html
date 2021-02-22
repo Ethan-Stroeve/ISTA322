@@ -1,0 +1,144 @@
+<!DOCTYPE html />
+<html>
+	<head>
+		<title>My first HTML</title>
+		<style>
+		//CSS content here
+		</style>
+		<script>
+		//JavaScript goes here
+		</script>
+		<meta name="Author" contenet="Ethan Stroeve">
+		<meta name="File" contenet="Lab1-html-stroeve.html">
+		<meta name="Date" contenet="Fenruary 22, 2021">
+	</head>
+	<body>
+		<!--this is a comment-->
+	</body>
+		<a id='top' /> <!--This is a target anchor source-->
+		<a href='#bottom'>got to bottom</a> <!--this also is a source anchor tag-->
+		<h1>ISTA 322 Lab 1 (HTML)</h1>
+		<h2>Part 1, HTML elements</h2>
+		<h3>Headers</h3>
+		<h4>Thomas Jefferson</h4>
+		<p>We hold these truths to be self-evident, that all men are created equal, 
+		that they are endowed by their Creator with certain unalienable Rights, that among these are Life, 
+		Liberty and the pursuit of Happiness.--That to secure these rights, Governments are instituted among Men, 
+		deriving their just powers from the consent of the governed, --That whenever any Form of Government becomes destructive of these ends, 
+		it is the Right of the People to alter or to abolish it, and to institute new Government, laying its foundation on such principles and organizing its powers in such form, 
+		as to them shall seem most likely to effect their Safety and Happiness. Prudence, indeed, will dictate that Governments long established should not be changed for light and transient causes; 
+		and accordingly all experience hath shewn, that mankind are more disposed to suffer, while evils are sufferable, than to right themselves by abolishing the forms to which they are accustomed.
+		But when a long train of abuses and usurpations, pursuing invariably the same Object evinces a design to reduce them under absolute Despotism, it is their right, it is their duty, to throw off such Government, 
+		and to provide new Guards for their future security.--Such has been the patient sufferance of these </p>
+		
+		<h4>Abraham Lincoln</h4>
+		<p>Four score and seven years ago our fathers brought forth on this continent,
+		a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, 
+		can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. 
+		It is altogether fitting and proper that we should do this. </p>
+		
+		<h2> Generic Elements: &lt;div&gt;, &lt;span&gt;</h2>
+		<div> This is a generic block element</div>
+		<div> This is a generic block element</div>
+		<div> This is a generic block element</div>
+		<div>
+			<span style='font-variant: small;'>This is a generic inline element.</span>
+			<span style='background-color: #aaffaa;'>This is a generic inline element.</span>
+			<span style='font-family: sans-serif;'>This is a generic inline element.</span>
+		</div>
+		
+		<h2>Hyper Refs</h2>
+		
+		<a href='http://github.com' target = 'new'>Go to github</a><br />
+		<a href='http://amazon.com' target = 'new'>Go to Amazon and buy!</a><br />
+		<a href='http://nexusmods.com' target = 'new'>Whatever!</a><br>
+
+		
+		<h2>HTML Tables</h2>
+		<center>
+		<table rules='all' style='border: 2px solid black;'>
+			<tr>
+				<th colspan='3' style='color: white; background-color black;'>Personnel</th>
+			</tr>
+			<tr> <!--First row -->
+				<td>Name</td>
+				<td>Rank</td>
+				<td>Serial Number</td>	
+			</tr>
+			<tr> <!--second row -->
+				<td>Will</td>
+				<td>Captain</td>
+				<td>123456789</td>	
+			</tr>
+			<tr> <!--third row -->
+				<td>Patrick</td>
+				<td>Sergeant Major</td>
+				<td>23456789</td>	
+			</tr>
+			<tr> <!--fourth row -->
+				<td>Shae</td>
+				<td>1st LT</td>
+				<td>098765432</td>
+			</tr>
+		</table>
+		</center>
+		
+		<h2>HTML Form</h2>
+		
+			<form method="GET"> 
+				what is this? <input type="hidden" name="carl" id="carl" value="42" /><br />
+				what is your name? <input type="text" name="adam" id="adam" /><br />
+				what is you password <input type="password" name="betty" id="betty" /><br />
+				color input: <input  type="color" name="dave" id="dave" /> <br />
+				range input: <input type="range" name="aerline" id="earline" value="550"
+				min='100' max='1000' step='1' oninput='frank.value = earline.value'>
+				<output style='border: 1px red solid;' id='frank' name='frank' ></output><br />
+				<h3>pizza</h3>
+				Pepperoni: <input type='checkbox' name='pizza' value='pepperoni' />
+				Bell Pepper: <input type='checkbox' name='pizza' value='BellPeppper' />
+				Bacon: <input type='checkbox' name='pizza' value='Bacon' />
+				Magic Mushrooms: <input type='checkbox' name='pizza' value='magicmushrooms' />
+				pineapple: <input type='checkbox' name='pizza' value='pineaplle' />
+				extracheese: <input type='checkbox' name='pizza' value='extracheese' />
+				<hr />
+				<select name="pizza2" id="pizza2" size=3 multiple='multiple'>
+					<option value='Chicken'>Chicken</option>
+					<option value='prosciutto'>prosciutto</option>
+					<option value='sausage'>sausage</option>
+					<option value='blackolives'>black olives</option>
+					<option value='ham'>ham</option>
+					<option value='mozorella'>mozorello</option>
+
+				</select>
+				
+				
+				<h3>sex</h3>
+				male: <input type='radio' name='sex' id='sex' value='male' />
+				female: <input type='radio' name='sex' id='sex' value='female' />
+				Don't know: <input type='radio' name='sex' id='sex' value='dontknow' />
+				<h3>State of Birth</h3>
+				<select name="sob" id="sob">
+					<option value=''>Where were you born?</option>
+					<option value='Co'>Colorado</option>
+					<option value='Sc'>South Carolina</option>
+					<option value='pa'>Pennsylvinia</option>
+					<option value='or'>Oregon</option>
+					<option value='il'>Illonois</option>
+					<option value='ny'>New York</option>
+				</select>
+				
+				<textarea name='ta' id=;ta; value='Type something here.'rows=1 cols=20>
+				</textarea>
+				
+				<hr />
+				
+				<input type="submit" name='submit' id='submit' value="Submit"/>
+				<input type='reset' value='Clear Form' />
+				
+				<br />
+
+				</form>
+		
+		<a href='#top'>go  to top </a>
+		<a id='bottom' /> <!--this is a target-->
+</html>

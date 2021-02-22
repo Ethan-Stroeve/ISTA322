@@ -1,0 +1,34 @@
+1) HTML(HyperText Markup Language) is the publishing language of the world wide web. HTML supports  text, 
+multimedia, and hyperlink
+
+2) HTTP(Hypertext Transfer Protocol) is an  application-level protocol for distributed, collaborative, 
+hypermedia information systems. It is a generic, stateless, protocol which can be used for many tasks 
+beyond its use for hypertext, such as name servers and distributed object management systems, through 
+extension of its request methods, error codes and headers
+
+3) Middleware is responsible for recieving http requests and send responses to them. Middleware 
+components are arranged in a chain know as the request pipeline. Also handles formating writing/reading 
+cookies and other common problems
+
+4) URL routing uses middleware to take care of matching url requests so that the components, called endpoints, 
+can focus onn responses. the mapping between endpoints and URL is called a route 
+(this is more effcient then common alternatives)
+
+5) Dependency injection makes it possible to easily access services anywhere in the application, including middlecomponents.
+objects that are managed by the ASP.NET core platform to avoid duplicating common features and coordinate between components.
+
+6) model binding is the process of creating the objects that action methods and page handlers require using value 
+data values obtained from the http request.
+
+7) Razor pages are application frameworks, code and content are mixed to form self contained pages. 
+Also can be used with mvc framework.
+
+8) Entity framework core is a object-relational mapping(ORM) framework, which represents data stored in a relational database
+as .NET objects. (can be used in any .NET core applicatio) Commonly used to access databases.
+
+9) ASP.NET core identity is microsofts authentication and authorization framework. It is used to validate user credentials 
+in ASP.NET core applications and restrict access to application features. 
+
+10) ASP.NET core platform contains the low-level features required to recieve and process HTTP requests and create response.
+There is a intergated HTTP server,  a system of middleware components to handle reques, and core features that the 
+application depend on, such as url routing and razor view engine.  
