@@ -1,0 +1,33 @@
+1) Visual studio is the traditional development enviroment for .NET applications, visual studio cod eis the lightweight
+alternative with less features.
+
+2) LocalDB is a zero configuration version of sql server.
+
+3) dotnet new globaljson --sdk-version 3.1.101 --output FirstProject --This command creates a folder named FirstProject and adds to it a file named globale.json 
+which specifies the version of .NET Core the project will use.
+dotnet new mvc --no-https --output FirstProject --framework netcoreapp3.1 -- this command creates a new ASP.NET core project 
+with the mvc template.
+
+
+4) use dotnet new to build a ASP.NET project. To run a project from the command line use dotnet run.
+
+5) The purpose of a endpoint is to handle incoming requests.
+
+6) controller is a is a built-in class, that has methods known as a action , which can be invoked to handle an http rerquest.
+
+7) Actions are defined in the controller class
+
+8) The purpose of the routing system is to select the endpoints that will handle a HTTP request.
+
+9) Three deafult routes configured by ASP.NET core routing system is /, /Home, /Home/Index
+
+10) The viewResult object instructs ASP.NET core to render a view. You create the ViewResult by calling the view method
+and specifiying the name.
+
+11) ASP.NET core knows what view to be called from an action method by following the standard naming convention, which
+is to put files in the folder that matches the controller that contains the action method.
+
+12) The job of the action method is to construct data and pass it to the view so it can be used to create HTML content
+based on the data values. 
+
+13) The data provided to the view is known as the view model.

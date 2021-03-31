@@ -1,0 +1,38 @@
+1) the purpose of the null conditional operator is to detect/check for nulls in asp.net core. this can apply to both
+value and reference types as they can both hold null.
+
+2) null coalescing operator generally used to set the default value of a variable. It takes two operands, 
+if the left operand is null, then the right operand is returned else the left operand.
+
+3) while the null conditional operator checks for null a nullable type can be assigned a null value. 
+nullable types makes it so regular reference types cannot be assigned null instead a nullable reference
+type must be used if null values are possible.
+
+4) Yes if you create a automatic property and initialize it with a value you can still change it later. Yes the
+value can be changed in the constructor.
+
+5) an object initializer allows you to create an object and specify its property values in a single step.
+collection initializer allows the creation of a collection and its contents to be specified in a single step.
+
+6) the is keyword performs a type test which tests that an object is of a specific type or has specific characteristics.
+
+7) Extension methods are defined with the this keyword in front of the first parameter. It is within the same 
+namespace as the class the extension applies to and is defined as static. public static int price(this cost)
+
+8) implicit typing or type inference is done by defining a local variable without specifing the variable type, this is
+done with the var keyword.
+
+9) the default implementation of a interface is a way to define default implementations for properties and methods deefined by interfaces. 
+This makes it possible to update interfaces without breaking the existing implementations of them.
+
+10) asynchronous methods performs work in the background and notify you when its complete to allow your code to do other
+things while the background work is performed. important tool for removing bottlenecks and allowing application to 
+take advantage of multiple processors anf processor cores to perform work in parallel. Imporves overall perfomance.
+
+11) when you use the await keyword you must also use the async keyword because 
+
+12) the yield keyword signals to the compiler that the method in which it appears is an iterator block. 
+The compiler generates a class to implement the behavior that is expressed in the iterator block.
+
+13) the nameof() expression makes the compiler take responsibility for producing a name string.
+

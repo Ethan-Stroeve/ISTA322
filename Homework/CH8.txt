@@ -1,0 +1,33 @@
+1) the three requirments as the author describes are
+	• Enhance the Index action method in the HomeController class so that it can filter the Product objects in the
+	 repository
+	• Revisit and enhance the URL scheme
+	• Create a category list that will go into the sidebar of the site, highlighting the current category and linking to
+	 others
+	 
+2) when adding new routes you should add them in the order that you want them applied because routes are 
+applied in the order in which they are defined, and you will get some odd effects if you change the order.
+
+3) Yes, ASP.NET Core 3 handles both outgoing and incoming HTTP requests, this is imprortant for url consistency.
+
+4) view components are perfect for creating items such as reusable navigation controls. A view component is a C# class
+that provides a small amount of reusable application logic with the ability to select and display Razor partial views.
+we use view components to render things like a navigation menu.
+
+5) when you use a view component in a view you reference the component by using the invoke method, they are also applied
+with a tag helper.
+
+6) When ASP.NET Core needs to create an instance of the view component class, it will note the need to provide a value
+for this parameter and inspect the configuration in the Startup class to determine which implementation object should
+be used.
+
+7)ASP.NET can get a users current infromation with a get request.
+
+8) The PathAndQuery extension method operates on the HttpRequest class, which ASP.NET Core uses to describe an HTTP
+request. The extension method generates a URL that the browser will be returned to after the cart has been updated, taking into
+account the query string, if there is one.
+
+9) session state is data associated with a series of requests made by a user.
+
+10) session state feature in ASP.NET Core stores only int, string, and byte[] values. Yes you can store a type that is 
+not supported by using an interface.

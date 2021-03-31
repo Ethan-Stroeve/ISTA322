@@ -1,0 +1,29 @@
+1) SDK command line tools are used for creating, managing, building, and running projects.
+
+2)  dotnet new console-A project for creating a command-line application that can run on .NET Core on Windows, Linux and macOS
+	dotnet new mvc-A project template for creating an ASP.NET Core application with example ASP.NET Core MVC Views and Controllers. This template can also be used for RESTful HTTP services.
+	dotnet new web- An empty project template for creating an ASP.NET Core application. This template does not have any content in it.
+
+3) dotnet new globaljson --sdk-version 3.1.101 --output MySolution/MyProject ///This adds a globaljson file to a project of version 3.1.101 and places it in MySolution/MyProject folder
+   dotnet new web --no-https --output MySolution/MyProject --framework netcoreapp3.1 ///command creates a project using a web template
+   dotnet new sln -o MySolution ///creates a mysolution folder(opening this in vs will load web project)
+   dotnet sln MySolution add MySolution/MyProject /// creates a mysolution folder
+
+
+4) the purpose if a global.json file is to ensure the right version of SDK will be used for the project
+
+5) the method app.UseStaticFiles() adds support for responding to HTTP requests with static content
+
+6) dotnet build builds the project--- dotnet run runs the program and starts to intergate ASP.NET core HTTP server
+to listen for HTTP request.
+
+7) Developers with code to share create packages and publish them to a public or private host.
+Package consumers obtain those packages from suitable hosts, add them to their projects, 
+and then call a package's functionality in their project code.
+
+8) Tool packages install commands that can be used from the command line to perform operations on .NET Core projects
+
+9) client side packages contain content that is delivered to the client, such as images, css stylesheet etc
+
+10) 2 ways a developer can debug code is to start with debugging and add breakpoints another method is to add
+system.console.writeline statements to your code

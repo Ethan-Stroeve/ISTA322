@@ -1,0 +1,26 @@
+1) The requirments for the Sports Store application are a online product catalog that customers can browse by catergory
+and page, a shopping cart where users can add and remove products, and a checkout where customers enter shipping details.
+
+2) in ASP.NET the Startup class is responsible for configuring core applications.
+
+3) The ConfigureServices method in the Startup class is used to setup objects, known as services, that can be used 
+throughout the application and are accessed through a feature called dependency injection.
+
+4) ASP.NET Core recieves HTTP requests and passes them along a resquest pipeline, which is populated with middleware
+components registered in the Connfigure method.
+
+5) The view start file tells razor to use the layout file in HTML that it generates
+
+6) The feature in ASP.NET Core that generates the database schema is called` migrations. the file created contains
+a class that contains the SQL commands required to prepare the database. 
+
+7)When ASP.NET Core sees that a controller instance needs to be created, and that the controller object
+required another object that iplements some interface, it determines which interface should be implemented by going to
+the configuration of the startup class. 
+
+8) Paging mechanism works by adding a optional parameter to the index method in home controller.
+
+9)  Dependency Injection in C# is a process in which we are injecting the object of a class into a class which depends on that object.
+
+10) The MapDefaultControllerRoute() method is arranged by the order they are listed. This is important because 
+you may want some routes with a higher level of precendance. 

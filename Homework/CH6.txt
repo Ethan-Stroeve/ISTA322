@@ -1,0 +1,31 @@
+1) unit testing is a form of testing in which individual components are isolated from the rest of the application so
+their behavior can be thoroughly validated.
+
+2) dotnet new xunit -o SimpleApp.Tests --framework netcoreapp3.1
+dotnet sln add SimpleApp.Tests
+dotnet add SimpleApp.Tests reference SimpleApp
+
+3) three unit test project tools are mstest, nunit, xunit.
+
+4) the convention for naming unit tests is <ApplicationName>.Tests
+
+5) the convention for naming test classes is to describe what is being tested, for methods it is to describe
+what the test does.
+
+6) the fact attribute is applied to each method to indicate that it is a test.  
+the theory attribute denotes a parameterised test that is true for a subset of data.
+
+7) The AAA testing pattern stands for arrange, act, assert. Arrange refers to setting up conditions for the test,
+act refers to performing the test, assert refers to verifying that the result is the expected one.
+
+8) The methods in the Assert class are used to check the outcome of an action is the one expected. The purpose of
+Assert.Equals is to ensure the result is equal to what is expected, it has 2 parameters (expected. result) but there
+is a version that accepts a third parameter when dealing with interfaces. Returns a exception if the two object are 
+not equal.
+
+9) The key to isolating a component for testing is interfaces.
+
+10) A mocking package makes it easy to create fake or mock objects for testing.
+
+11) Setup() can be used for mocking a method or a property.
+SetupGet() is specifically for mocking the getter of a property.

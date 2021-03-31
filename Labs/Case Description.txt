@@ -1,0 +1,40 @@
+# Project step
+**Ethan Stroeve**  
+*Feburary 28th 2021*
+
+---
+
+## Use Case
+A use case is a written description of how users will perform tasks on your website. 
+It outlines, from a user’s point of view, a system’s behavior as it responds to a request.
+Each use case is represented as a sequence of simple steps, beginning with a user's goal and ending when that goal is fulfilled.
+
+ #### Actors
+ + User
+ + System
+ 
+ 
+ #### Trigger  
+ + User searches for a game
+ 
+ #### Precondition
+ + Must have another player to play
+ 
+ #### Post-condition  
+ + Users will be matched to play a game
+ 
+ #### Normal Flow
+ 1. User logins or plays as guest 
+ 1. User picks time mode they wish to play
+ 1. User clicks button to search for new game
+ 1. User gets matched with another user
+ 1. Game timer starts after first move is made
+ 1. Game is played till a winner or draw is made
+ 1. Users rating is adjusted and game saved in records
+ 1. User exits game
+ 
+ #### Alternate Flow
+ 1. User fails to find another player to start a game
+ 1. User is prompted and asked if they wish to keep searching or try again later
+ 1. User selects to continue or leaves
+ 

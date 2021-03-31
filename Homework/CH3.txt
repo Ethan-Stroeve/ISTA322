@@ -1,0 +1,32 @@
+1) The data model is the most important part of any ASP.NET core application.
+
+2) The domain model(name for data model) contains C#  objects that make up the universe of the application
+and the methods that manipulate them.
+
+3) the model classes in ASP.NET core 3 are held in the models folder. 
+
+4) many?
+
+5) A tag helper is an instruction for razor that will perrform when the view is rendered.
+
+6) A asp-action attribute is an instruction to add an href attribute to a element that contains a url for a action method.
+
+7) the difference between HTTP GET and HTTP POST is that get is used to request data from a specified resource and
+post is used to request data from a specified resource.
+
+8) model binding is a process of extracting data from HTTP request and providing them to the action method’s arguments
+and it allows you to  work with c# objects rather than indivdual data values.
+
+9) it is  good practice to validate user data because they can enter nonsense data or a blank submit. To do this you
+need to apply attributes to the model class. [required(errormessage = "please enter name")] public string name{get;set}
+
+10) modelstate.isvalid checks the model binder against the validation constraints and if it returns true then the code will
+run if it is false then there were validation errors.
+
+11) asp-validation-summary displays a list of validation errors when the view is rendered.
+
+12) static files are typically kept in the web root folder.
+
+13) Bootstrap is a free front-end framework, Bootstrap includes HTML and CSS based design templates for typography, 
+forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins
+It was devloped by mark otto and jacob thornton at twitter and was released as a open source product.
