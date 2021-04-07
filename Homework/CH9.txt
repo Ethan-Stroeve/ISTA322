@@ -1,0 +1,50 @@
+1) "I defined a Cart model class in the previous chapter and demonstrated how it can be stored
+using the session feature, allowing the user to build up a set of products for purchase. The
+responsibility for managing the persistence of the Cart class fell to the Cart Razor Page,
+which has to deal with getting and storing Cart objects as session data.
+The problem with this approach is that I will have to duplicate the code that obtains and
+stores Cart objects in any other Razor Page or controller that uses them."
+
+the problem the author describes is that of dublication, if the author wishes to us any other razor page or controller they will need to duplicate 
+the code that obtains and stores the objects.
+
+2) Services are commonly used to hide details of how interfaces are implemented from the components that depend on them. But services can be used to 
+solve lots of other problems as well and can be used to shape and reshape an application, even when you are working with concrete classes such as Cart.
+
+3)“The static GetCart method is a factory for creating SessionCart objects and providing them with an ISession object so they can store themselves.”
+The author means in this statement that the GetCart method is a factory because it creates new SessionCart objects, much like a factory creats something. 
+
+4) The AddScoped method specifies that the same object should be used to satisfy related requests for Cart instances. How
+requests are related can be configured, but by default, it means that any Cart required by components handling the same HTTP
+request will receive the same object.
+
+5)  How is an HTML form element with a tag handler of asp-page-handler programmed to execute the functionality exposed by the form?
+The handler method uses the value it receives to locate the item in the cart and remove it.
+
+6) BindNever attribute prevents the user from supplying values for these properties in an HTTP request
+
+7) The asp-for attribute on the input elements is handled by a built-in tag helper that
+generates the type, id, name, and value attributes based on the specified model property
+
+8)  Using Entity Framework, how do you add a new model to your database?
+First, add a new property to the database context class the run dotnet ef migrations add Orders
+
+9) What, speciically, does this command do: dotnet ef migrations add Model
+This command tells Entity Framework Core to take a new snapshot of the application data model, work out how it differs from
+the previous database version, and generate a new migration called Model.
+
+10) How does Entity Framework understand to load data that is contained in multiple tables? For example,
+suppose you want to load data from both Orders and Order.Details. What LINQ methods accomplish
+this?
+
+the Include and ThenInclude methods specify that when an object is read from the database, the collection associated with the
+property should also be loaded along with each object associated with each collection object.
+
+11) Why do we validate data on the client side? Why do we validate data on the server side? What are
+the advantages and disadvantages of cliet side validation and server side validation?
+
+The data submitted by the user is sent to the server before it is validated, which is known as server-side validation and for
+which S .久 Core has excellent support. he problem with server-side validation is that the user isn’t told about errors until after the
+data has been sent to the server and processed and the result page has been generated—something that can take a few seconds on a
+busy server. For this reason, server-side validation is usually complemented by client-side validation, where JavaScript is used to check
+the values that the user has entered before the form data is sent to the server
